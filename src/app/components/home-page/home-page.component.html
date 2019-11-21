@@ -2,7 +2,7 @@
     <div class="main-page">
         <div class="columns is-multiline">
 
-            <div class="column is-12-mobile is-6-tablet is-3-desktop">
+            <div class="column is-12-mobile is-6-tablet is-3-desktop" *ngFor="let data of employees">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
@@ -12,7 +12,7 @@
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <span class="title is-4">Angpao</span>
+                                <span class="title is-4">{{data.firstName}} {{data.lastName}}</span>
                             </div>
                         </div>
 
