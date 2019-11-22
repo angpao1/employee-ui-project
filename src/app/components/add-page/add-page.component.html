@@ -1,1 +1,41 @@
-<p>add-page works!</p>
+<div class="container">
+    <div class="field">
+        <div class="control">
+            <input class="input is-primary" type="text" placeholder="Employee ID" id="employeeId" #employeeId>
+        </div>
+    </div>
+    <div class="field">
+        <div class="control">
+            <input class="input is-info" type="text" placeholder="Firstname" id="firstname" #firstname>
+        </div>
+    </div>
+    <div class="field">
+        <div class="control">
+            <input class="input is-success" type="text" placeholder="Lastname" id="lastname" #lastname>
+        </div>
+    </div>
+    <div class="field">
+        <div class="control">
+            <input class="input is-warning" type="text" placeholder="Email" id="email" #email>
+        </div>
+    </div>
+    <div class="field">
+        <div class="control">
+            <input class="input is-danger" type="text" placeholder="Age" id="age" #age>
+        </div>
+    </div>
+    <div class="field">
+        <div class="control">
+            <input class="input is-danger" type="text" placeholder="Sex" id="sex" #sex>
+        </div>
+    </div>
+    <div class="field is-grouped">
+        <p class="control">
+            <button class="button is-link"
+                (click)="save(employeeId.value, firstname.value, lastname.value, email.value, age.value, sex.value)">
+                Save changes
+            </button>
+        </p>
+
+    </div>
+</div>
